@@ -33,6 +33,38 @@ WP Thumb is a simple but powerful plugin that seamlessly intergrates with the Co
 
 Just install like any other WordPress plugin.
 
+## Usage
+
+### WordPress
+
+`<?php wp_get_attachment_image_src( $id, 'width=100&height=100&crop=1&crop_from_position=center,left' ) ?>`
+
+
+### Direct Usage
+
+`<?php echo wpthumb( 'http://google.com/logo.png', 'width=100&height=100&crop=0' ) ?>`
+
+
+### Defaults
+
+```
+$arg_defaults = array(
+    	'width' 		=> 0,
+    	'height'		=> 0,
+    	'crop'			=> false,
+    	'crop_from_position' 	=> 'center,center',
+    	'resize'		=> true,
+    	'watermark_options' 	=> array(),
+    	'cache'			=> true,
+    	'default'		=> null,
+    	'jpeg_quality' 		=> 80,
+    	'resize_animations' 	=> true,
+    	'return' 		=> 'url',
+    	'background_fill'	=> null
+);
+```
+
+
 ## License
 WP Thumb is licensed under the GPLv2 or later.
 
