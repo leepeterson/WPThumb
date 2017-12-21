@@ -1,5 +1,3 @@
-_**This project is unmaintained.**_
-
 <table width="100%">
 	<tr>
 		<td align="left" width="70">
@@ -48,20 +46,24 @@ Just install like any other WordPress plugin.
 ### Defaults
 
 ```
-$arg_defaults = array(
-    	'width' 		=> 0,
-    	'height'		=> 0,
-    	'crop'			=> false,
-    	'crop_from_position' 	=> 'center,center',
-    	'resize'		=> true,
-    	'watermark_options' 	=> array(),
-    	'cache'			=> true,
-    	'default'		=> null,
-    	'jpeg_quality' 		=> 80,
-    	'resize_animations' 	=> true,
-    	'return' 		=> 'url',
-    	'background_fill'	=> null
-);
+$arg_defaults = [
+	'width'                   => 0,
+	'height'                  => 0,
+	'crop'                    => false,
+	'crop_from_position'      => 'center,center',
+	'resize'                  => true,
+	'watermark_options'       => array(),
+	'cache'                   => true,
+	'skip_remote_check'       => false,
+	'default'                 => null,
+	'jpeg_quality'            => 90,
+	'resize_animations'       => true,
+	'return'                  => 'url',
+	'custom'                  => false,
+	'background_fill'         => null,
+	'output_file'             => false,
+	'cache_with_query_params' => false
+];
 ```
 
 
